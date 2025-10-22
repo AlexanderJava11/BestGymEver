@@ -92,5 +92,10 @@ public class Main {
                     "Ingen PT-Logg skrivs eftersom personen inte är betalande kund.",
                     "Ingen loggning", JOptionPane.INFORMATION_MESSAGE);
         }
+
+        JOptionPane.showMessageDialog(null,
+                MotivationsTips.slumpaTips(),
+                "Dagens motivation",
+                JOptionPane.INFORMATION_MESSAGE);
     }
 }
