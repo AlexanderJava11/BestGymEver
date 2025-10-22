@@ -14,24 +14,24 @@ Loggar PT besök i filen pt-logg.txt
 Klasser
 -------
 
-Main.java                - Min huvudklass som kör programmet
+- Main.java                - Min huvudklass som kör programmet
 
-Register.java            - Läser in och hanterar medlemsregistret
+- Register.java            - Läser in och hanterar medlemsregistret
 
-Medlem.java              - Record som lagrar information om varje medlem
+- Medlem.java              - Record som lagrar information om varje medlem
 
-MedlemsKategori.java     - Enum för medlemsstatus
+- MedlemsKategori.java     - Enum för medlemsstatus
 
-Medlemstyp.java          - Enum för medlemsnivå (Standard, Guld eller Platina) Vi alla är platinor💎
+- Medlemstyp.java          - Enum för medlemsnivå (Standard, Guld eller Platina) Vi alla är platinor💎
 
-PtLogg.java              - Loggar PT-besök till textfil
+- PtLogg.java              - Loggar PT-besök till textfil
 
 Filer
 -----
 
-members.txt              - Lista över medlemmar
+- members.txt              - Lista över medlemmar
 
-pt-logg.txt              - Logg över gymbesök  
+- pt-logg.txt              - Logg över gymbesök  
 
 ----
 👨‍💻 Skapat av Alexander, 2025
