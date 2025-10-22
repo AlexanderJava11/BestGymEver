@@ -6,15 +6,19 @@ Programmet kan läsa in medlemmar från en textfil, visa information om kunder o
 Mina funktioner
 ---------------
 Läser in medlemsdata från members.txt
+
 Söker efter medlemmar via namn eller personnummer
+
 Visar medlemsinformation i dialogruta med hjälp av JOptionPane
+
 Avgör om medlemmen är nuvarande, tidigare eller obehörig medlem
+
 Loggar PT besök i filen pt-logg.txt
 
 Klasser
 -------
 
-- Main.java                - Min huvudklass som kör programmet
+- Main.java                - Min huvudklass som kör programmet ###
 
 - Register.java            - Läser in och hanterar medlemsregistret
 
@@ -24,7 +28,11 @@ Klasser
 
 - Medlemstyp.java          - Enum för medlemsnivå (Standard, Guld eller Platina) Vi alla är platinor💎
 
-- PtLogg.java              - Loggar PT-besök till textfil
+- PtLogg.java              - Loggar PT-besök till textfil 'pt-logg.txt'
+
+- Betalning.java           - Hanterar betalningar och Klarna delbetalningar med avgift och ränta
+
+- MotivationsTips.java     - Ger slumpmässiga motivationstips till användaren 💪
 
 Filer
 -----
