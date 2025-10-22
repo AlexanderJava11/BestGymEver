@@ -1,9 +1,9 @@
-#🏋️‍♂️🏆BestGymEver🏆🏋️‍♂️
+🏋️‍♂️🏆BestGymEver🏆🏋️‍♂️
 ---------------------
 Ett Java program som hanterar medlemmar i gymmet BestGymEver.
 Programmet kan läsa in medlemmar från en textfil, visa information om kunder och logga deras PT besök
 
-## Mina funktioner
+⚙️ Mina funktioner
 ---------------
 Läser in medlemsdata från members.txt
 
@@ -15,7 +15,7 @@ Avgör om medlemmen är nuvarande, tidigare eller obehörig medlem
 
 Loggar PT besök i filen pt-logg.txt
 
-## Klasser i projektet
+🧠 Klasser i projektet
 -------
 
 - Main.java                - Min huvudklass som kör programmet
@@ -34,14 +34,25 @@ Loggar PT besök i filen pt-logg.txt
 
 - MotivationsTips.java     - Ger slumpmässiga motivationstips till användaren 💪
 
-Filer
+📂 Filer
 -----
 
 - members.txt              - Lista över medlemmar
 
 - pt-logg.txt              - Logg över gymbesök  
 
-----
+🧪 Tester
+----------
+
+- MedlemsTest.java         - Testar alla medlemmar läses in korrekt från textfilen
+
+- RegisterTest.java        - Testar sökning och hantering av medlemregistret
+
+- PtLogg.java              - Kontrollerar att PT-besök loggas rätt till fil
+
+- MedlemstypTest.java      - Testar att medlemsnivåer (Standard, Guld, Platina) hanteras korrekt
+
+-----------------------------
 👨‍💻 Skapat av Alexander, 2025
 
 
