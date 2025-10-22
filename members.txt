@@ -1,4 +1,22 @@
-Anna Andersson; Långgatan 12, 12345 Staden; anna.andersson@example.com; 851202-6729; 2019-12-30; 2024-10-01; Guld
-Bertil Bäck; Parkvägen 3, 11122 Stockholm; bertil.back@example.com; 900101-1234; 2020-05-15; 2023-05-10; Guld
-Carla Cruz; Nytorgsgatan 7, 41102 Göteborg; carla.cruz@example.com; 820303-5678; 2018-03-01; 2018-12-20; Platina
-Alexander Zeljic; Ingrid horns väg 9, 13636 Handen; alexander.zeljic@yh-nackademin.se; 970629-1111; 2024-05-01; 2026-05-01; Platina
+Namn;Adress;Mailadress;Personnummer;Datum_köpt_gymmedlemskap;Datum_senast_uppdaterad;Medlemsnivå
+Fredrik Berggren;Skolgränd 8, 16819 Norrköping;fredde@fakemail.se;851020-6728;2019-12-30;2021-12-30;Platina
+Astrid Larsson;Järnvägsvägen 5, 64230 Gävle;asta@fakemail.de;540815-4382;2021-12-04;2022-12-04;Platina
+Pia Johansson;Idrottsvägen 1, 77845 Landskrona;anne31@fakemail.de;361026-1822;2024-07-18;2025-07-18;Standard
+Maria Lindström;Backtorget 666, 44729 Falun;bingo@fakemail.com;680127-2300;2022-02-09;2025-02-09;Standard
+Maria Holmberg;Fabriksgatan 4, 54886 Borlänge;maria@fakemail.se;480120-5578;2021-07-06;2024-07-06;Platina
+Eva Johansson;Ängsvägen 717, 78304 Halmstad;svanen@fakemail.com;940128-7025;2023-10-23;2024-10-23;Platina
+Herbert Jansson;Skogsvägen 7, 11512 Södertälje;hebbe@fakemail.se;060201-4763;2023-01-25;2024-01-25;Guld
+Erik Gustafsson;Idrottsgatan 9, 54018 Lidköping;maria95@fakemail.se;901101-5113;2021-06-20;2024-06-20;Platina
+Linda Nyberg;Grangatan 6, 47371 Halmstad;rally@fakemail.se;490827-3164;2023-10-10;2024-10-10;Platina
+Gustaf Sjöberg;Kyrkvägen 5, 33703 Borlänge;gurra@fakemail.se;550726-4835;2022-02-20;2025-02-20;Standard
+Johan Lundberg;Idrottsvägen 69, 79332 Malmö;jocke@fakemail.com;720917-6440;2022-01-16;2024-01-16;Guld
+Gustaf Karlsson;Bäckvägen 1, 10851 Karlstad;yisaksson@fakemail.com;690925-7823;2021-11-27;2024-11-27;Platina
+Lennart Johansson;Skogsgatan 317, 12506 Varberg;osten@fakemail.com;980206-3801;2023-08-16;2023-08-16;Standard
+Oskar Bengtsson;Ängstorget 59, 24436 Lund;lucky@fakemail.com;361015-9737;2021-08-09;2023-08-09;Guld
+Egon Jakobsson;Backstigen 43, 85435 Motala;egge@fakemail.com;910609-2571;2021-10-02;2022-10-02;Guld
+Viktoria Jakobsson;Åkervägen 21, 14001 Falun;vickan@fakemail.se;770530-4579;2022-08-27;2023-08-27;Guld
+Gustav Johansson;Stationsgatan 73, 28139 Gävle;trisse@fakemail.com;370701-3169;2022-04-11;2025-04-11;Platina
+Lilian Andersson;Gengatan 01, 32422 Södertälje;lillan@fakemail.com;561107-3031;2021-03-28;2024-03-28;Platina
+Jan Persson;Strandgränd 34, 19271 Skellefteå;janne@fakemail.se;580606-9828;2022-01-21;2025-01-21;Guld
+Jakob Lundin;Backgränd 19, 69618 Sandviken;jacke@fakemail.com;000718-8949;2020-07-10;2022-07-10;Standard
+Alexander Zeljic;Ingridhornsväg 9, 13636 Handen;alexander.zeljic@yh-nackademin.se;970629-1111;2020-07-10;2026-07-23;Platina
