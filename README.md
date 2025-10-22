@@ -33,4 +33,7 @@ members.txt              - Lista över medlemmar
 
 pt-logg.txt              - Logg över gymbesök  
 
+----
+👨‍💻 Skapat av Alexander, 2025
+
 
