@@ -4,7 +4,6 @@ import java.time.LocalDate;
  * En record som representerar en medlem i gymmet.
  * Records används för att lagra data på ett enkelt och oföränderligt sätt.
  * Varje fält blir automatiskt en final variabel med getter-metoder.
-
  */
 
 public record Medlem(

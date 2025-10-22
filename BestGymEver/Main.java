@@ -4,15 +4,16 @@ import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.Optional;
 
+// Huvudklass som  kör programmet BestGymEver
+// Hanterar inläsning av medlemmar, användarinmatning och loggning av PT-besök
 public class Main {
     public static void main(String[] args) {
 
-        // Förbered indatafilen som innehåller alla medlemmar på BestGymEver
-        // Paths.get ("members.txt") letar efter filen
+        // Förbereder filen som innehåller alla medlemmar i gymmet
         Path fil = Paths.get("members.txt");
 
         // Försöker skapa en Register objekt som läser in min fil
-        // Samt fångar in alla fel såsom "fil saknas" och visar dialog till användaren
+        // Vid fel visas ett meddelande och programmet avslutas.
         Register register;
         try {
             register = new Register(fil);
@@ -29,17 +30,17 @@ public class Main {
                 "Skriv kundens namn eller personnummer:",
                 "Kundinmatning", JOptionPane.QUESTION_MESSAGE);
 
-        // Hanterar avbruten eller tom inmatning
+        // Avbryter om användaren klickar "Avbryt" eller lämnar tomt
         if (inmatning == null || inmatning.trim().isEmpty()) {
             JOptionPane.showMessageDialog(null,
                     "Ingen inmatning. Avslutar.", "Avslutat", JOptionPane.INFORMATION_MESSAGE);
             return;
         }
 
-        // Slår ihop medlemmar i registret (retunerar optional)
+        // Söker efter medlem i registret (returnerar Optional)
         Optional<Medlem> kanskeMedlem = register.hittaMedlem(inmatning.trim());
 
-        // Saknas en medlem så visa varning och avsluta programmet
+        // Om medlemmen finns inte finns - visa varning och sluta
         if (kanskeMedlem.isEmpty()) {
             JOptionPane.showMessageDialog(null,
                     "Personen finns inte i filen och är därför obehörig i detta gym.",
@@ -47,11 +48,11 @@ public class Main {
             return;
         }
 
-        // Hämtar medlem och beräkknar kategori (nuvarande/föredetta/obetalande) för dagens datum
+        // Hämtar medlem och beräknar vilken kategori den tillhör (nuvarande/tidigare)
         Medlem medlem = kanskeMedlem.get();
         MedlemsKategori kategori = register.beräknaKategori(medlem, LocalDate.now());
 
-        // Bygger upp en enkel text med info att visa
+        // Bygger upp texten med medlemsinformation
         StringBuilder info = new StringBuilder();
         info.append("Namn: ").append(medlem.namn()).append("\n");
         info.append("Personnummer: ").append(medlem.personnummer()).append("\n");
@@ -59,21 +60,21 @@ public class Main {
         info.append("Senaste betalt: ").append(medlem.senasteBetalt()).append("\n");
         info.append("Kategori: ").append(kategori.tillSvensktext()).append("\n");
 
-        // Medlemstyp kan vara null, visa "okänd" om den saknas
+        // Medlemstyp kan vara null - visa "okänd" i så fall
         if (medlem.medlemstyp() != null) {
             info.append("Medlemstyp: ").append(medlem.medlemstyp().tillSvensktext()).append("\n");
         } else {
             info.append("Medlemstyp: (okänd)").append("\n");
         }
 
-        // Visa sammanställd medlemsinformation
+        // Visar alla medlemsinformation i en dialogruta
         JOptionPane.showMessageDialog(
                 null,
                 info.toString(),
                 "Medlemsinformation",
                 JOptionPane.INFORMATION_MESSAGE);
 
-        // Logga PT-besök endast för nuvarande (betalande kunder)
+        // Logga PT-besök om medlemmen är nuvarande (aktiv kund)
         if (kategori == MedlemsKategori.NUVARANDE) {
             try {
                 PtLogg.loggaBesök(medlem, LocalDate.now());
@@ -86,6 +87,7 @@ public class Main {
                         "Fel vid inloggning", JOptionPane.ERROR_MESSAGE);
             }
         } else {
+            // Om medlemmen inte är nuvarande visas info att logg inte sparas
             JOptionPane.showMessageDialog(null,
                     "Ingen PT-Logg skrivs eftersom personen inte är betalande kund.",
                     "Ingen loggning", JOptionPane.INFORMATION_MESSAGE);
