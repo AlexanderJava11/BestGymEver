@@ -71,7 +71,7 @@ public class Betalning {
             System.out.println("\nInitierar " + metod + " ...");
             simuleringsProccess(5);
 
-            boolean success = random.nextDouble() < 0.7;
+            boolean success = random.nextDouble() < 0.5;
             String orderNummer = generateOrderNummer();
 
             if (success) {
@@ -86,7 +86,6 @@ public class Betalning {
         } else {
             System.out.println("Betalning avbruten.");
         }
-
         scanner.close();
     }
 
