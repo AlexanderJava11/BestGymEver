@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class MotivationsTips {
     private static final List<String> tips = List.of(
-            "Kom ihåg: du ångrar aldrig ett träningspass!",
+            "Kom ihåg: Du ångrar aldrig ett träningspass!",
             "Träna för att må bra, inte bara för att se bra ut \uD83D\uDCAA",
             "Lite träning är bättre än ingen träning alls!",
             "Svetten är bara fett som gråter \uD83D\uDE05",
