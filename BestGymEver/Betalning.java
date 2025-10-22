@@ -91,7 +91,7 @@ public class Betalning {
         String confirm = scanner.nextLine().trim();
         if (confirm.equalsIgnoreCase("JA")) {
             System.out.println("\nInitierar " + metod + " ...");
-            simuleringsProccess(5);
+            simuleringsProccess(7);
 
             boolean success = random.nextDouble() < 0.5;    // 50/50 simulering
             String orderNummer = generateOrderNummer();
