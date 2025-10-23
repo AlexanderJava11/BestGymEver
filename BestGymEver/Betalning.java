@@ -93,7 +93,7 @@ public class Betalning {
             System.out.println("\nInitierar " + metod + " ...");
             simuleringsProccess(7);
 
-            boolean success = random.nextDouble() < 0.5;    // 50/50 simulering
+            boolean success = random.nextDouble() < 1.0;    // 50/50 simulering
             String orderNummer = generateOrderNummer();
 
             if (success) {
