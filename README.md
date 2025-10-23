@@ -78,7 +78,7 @@ Det finns även stöd för **betalningar via Klarna (delbetalning)** och **slump
      Misslyckad -> ❌ "Betalning misslyckades".
 
 10. **💡 Motivation**
-   - 'Motivation.java' visar ett slumpat **motiverande citat** efter avslutad betalning.       
+    - 'Motivation.java' visar ett slumpat **motiverande citat** efter avslutad betalning.       
 
 -----   
 
