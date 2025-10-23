@@ -53,6 +53,7 @@ public class Main {
         MedlemsKategori kategori = register.beräknaKategori(medlem, LocalDate.now());
 
         // Bygger upp texten med medlemsinformation
+        // Bygger upp en nytt objekt utan att skapa nya strängar
         StringBuilder info = new StringBuilder();
         info.append("Namn: ").append(medlem.namn()).append("\n");
         info.append("Personnummer: ").append(medlem.personnummer()).append("\n");
